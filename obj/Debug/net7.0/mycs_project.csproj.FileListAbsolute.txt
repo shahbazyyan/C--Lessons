@@ -1,0 +1,15 @@
+/home/user/Desktop/mycs_project/bin/Debug/net7.0/mycs_project
+/home/user/Desktop/mycs_project/bin/Debug/net7.0/mycs_project.deps.json
+/home/user/Desktop/mycs_project/bin/Debug/net7.0/mycs_project.runtimeconfig.json
+/home/user/Desktop/mycs_project/bin/Debug/net7.0/mycs_project.dll
+/home/user/Desktop/mycs_project/bin/Debug/net7.0/mycs_project.pdb
+/home/user/Desktop/mycs_project/obj/Debug/net7.0/mycs_project.csproj.AssemblyReference.cache
+/home/user/Desktop/mycs_project/obj/Debug/net7.0/mycs_project.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Desktop/mycs_project/obj/Debug/net7.0/mycs_project.AssemblyInfoInputs.cache
+/home/user/Desktop/mycs_project/obj/Debug/net7.0/mycs_project.AssemblyInfo.cs
+/home/user/Desktop/mycs_project/obj/Debug/net7.0/mycs_project.csproj.CoreCompileInputs.cache
+/home/user/Desktop/mycs_project/obj/Debug/net7.0/mycs_project.dll
+/home/user/Desktop/mycs_project/obj/Debug/net7.0/refint/mycs_project.dll
+/home/user/Desktop/mycs_project/obj/Debug/net7.0/mycs_project.pdb
+/home/user/Desktop/mycs_project/obj/Debug/net7.0/mycs_project.genruntimeconfig.cache
+/home/user/Desktop/mycs_project/obj/Debug/net7.0/ref/mycs_project.dll
