@@ -7,38 +7,45 @@ namespace mycs_project
     {
         static void Main()
         {
-            // TYPES FOR NUMBER
+            //  float user_data;
+            //  user_data = Convert.ToDouble(Console.ReadLine());
+            // float user_data = float.Parse(Console.ReadLine());
 
-            int num = 9990;
-            // byte num = 255;
-            // short num = -3500;
-            // long num = 999999999;
+            // float res;
+            // res = user_data * 55.258f;
+            // res = user_data / 11f;
+            // res = user_data + 55f;
+            // res = user_data - 888f;
+            // res = user_data % 3f;
+            // res++;
+            // res -= 10;
 
-            // float num = 5.890f;
-            // num = -888888.89767f;
-            // double num = 454455.237799999d;
 
-            // TYPE FOR string
+            // Console.WriteLine("Result " + res);
 
-            string word = "look ";
-            // char symbol = 'l';
 
-           // Bollean true or false
+            // System.Console.WriteLine(Math.PI);
+            // System.Console.WriteLine(Math.E);
+            // System.Console.WriteLine(Math.Abs(-20));
+            // System.Console.WriteLine(Math.Ceiling(4.12f));
+            // System.Console.WriteLine(Math.Floor(4.56f));
+            // System.Console.WriteLine(Math.Round(4.5));
+            // System.Console.WriteLine(Math.Min(5, 99));
+            // System.Console.WriteLine(Math.Max(335, 678));
+            // System.Console.WriteLine(Math.Pow(5, 3));
 
-            // bool isAlive = true;
-            // bool isHappy = false;
+             System.Console.WriteLine("Type a radius circle");
+             double radius = Convert.ToDouble(Console.ReadLine());
+             double area = Math.PI * Math.Pow(radius, 2);
 
-            Console.WriteLine(word  +  num);
+             Console.WriteLine("Are circle with {0} radius is equal to {1}:", radius, area);
 
-            // Console.ReadLine();
+            int num = Convert.ToInt32(Console.ReadLine());
+            int num1 = Convert.ToInt32(Console.ReadLine());
 
-             // Practice
+            int minmax = Math.Max(num, num1);
 
-            int number1, number2 = 563;
-
-            number1 = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine(number2 * number1);
+            Console.WriteLine(minmax);
         }
     }
 
