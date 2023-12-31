@@ -3,50 +3,70 @@
 namespace mycs_project
 {
 
-    class Program
-    {
-        static void Main()
-        {
-            //  float user_data;
-            //  user_data = Convert.ToDouble(Console.ReadLine());
-            // float user_data = float.Parse(Console.ReadLine());
+	class Program
+	{
+		static void Main()
+		{
+			// string word = "david";
+			// bool isAlive = true;
 
-            // float res;
-            // res = user_data * 55.258f;
-            // res = user_data / 11f;
-            // res = user_data + 55f;
-            // res = user_data - 888f;
-            // res = user_data % 3f;
-            // res++;
-            // res -= 10;
+			// if (isAlive) {
+			// 	Console.WriteLine("good");
+			// }
+
+			// if (word.Length == 5) {
+			// 	Console.WriteLine("ok");
+			// }
+
+			// int x = 10;
+			// bool isHappy = false;
+
+			// if (x == 10 && isHappy)
+			// {
+			// 	Console.WriteLine("Number is 10 and user is happy!");
+			// }
+			// 		if (x == 10 || isHappy)
+			// 	{
+			// 		Console.WriteLine("Number is 10 and user is happy!");
+			// 	}
+			// 	else if (x > 100)
+			// 	{
+			// 		Console.WriteLine("X is not bigger than 10");
+			// 	}
+			// 	else
+			// 	{
+			// 		Console.WriteLine("Something went wrong");
+			// 	}
 
 
-            // Console.WriteLine("Result " + res);
+			Console.Write("Enter name: ");
+			string role = Console.ReadLine();
 
+			if (role == "admin")
+			{
+				Console.Write("Enter name: ");
+				string user_name = Console.ReadLine();
+				Console.Write("Enter {0} age", user_name);
+				short age = Convert.ToInt16(Console.ReadLine());
 
-            // System.Console.WriteLine(Math.PI);
-            // System.Console.WriteLine(Math.E);
-            // System.Console.WriteLine(Math.Abs(-20));
-            // System.Console.WriteLine(Math.Ceiling(4.12f));
-            // System.Console.WriteLine(Math.Floor(4.56f));
-            // System.Console.WriteLine(Math.Round(4.5));
-            // System.Console.WriteLine(Math.Min(5, 99));
-            // System.Console.WriteLine(Math.Max(335, 678));
-            // System.Console.WriteLine(Math.Pow(5, 3));
+				if (age <= 0 || age > 99)
+				{
+					Console.Write("Enter {0} age", user_name);
+					age = Convert.ToInt16(Console.ReadLine);
+				}
 
-             System.Console.WriteLine("Type a radius circle");
-             double radius = Convert.ToDouble(Console.ReadLine());
-             double area = Math.PI * Math.Pow(radius, 2);
+				if (age <= 0 || age > 99)
+					Console.WriteLine("Error");
+				else
+				{
+					Console.WriteLine("User age is" + age);
+				}
 
-             Console.WriteLine("Are circle with {0} radius is equal to {1}:", radius, area);
+			}
+			else
+				Console.WriteLine("You are not admin");
 
-            int num = Convert.ToInt32(Console.ReadLine());
-            int num1 = Convert.ToInt32(Console.ReadLine());
-
-            int minmax = Math.Max(num, num1);
-
-            Console.WriteLine(minmax);
-        }
-    }
+		}
+	}
 
 }
