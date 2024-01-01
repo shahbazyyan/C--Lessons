@@ -8,43 +8,60 @@ namespace mycs_project
   static void Main()
   {
 
-   // for (byte i = 0; i <= 21; i++) {
-   //  Console.WriteLine("Element: {0}", i);
+   // int[] numbers = new int[5];
+   // numbers[0] = 20;
+   // numbers[1] = 50;
+   // numbers[2] = 100;
+   // numbers[3] = 150;
+   // numbers[4] = 210;
+
+   // System.Console.WriteLine("El: " + numbers[2]); 
+
+   // string[] words = new string[] {"John", "Alex", "Snow"};
+
+   // words[1] = "Bob";
+
+   // for (int i = 0; i < numbers.Length; i++) {
+   //  Console.WriteLine("El: " + numbers[i] + 1);
    // }
 
-   // for (float i = 200; i > 10; i/=2) {
-   //   Console.WriteLine("Element: {0}", i);
-   // }
 
-   // int i = 0;
-   // while (i <= 15)
+   // short[] numbers = new short[10];
+   // Random random = new Random();
+   // short val = 0;
+
+   // for (byte i = 0; i < numbers.Length; i++)
    // {
-   //  Console.WriteLine("Element: {0}", i);
-   //  i++;
+   //  numbers[i] = Convert.ToInt16(random.Next(11, 97));
+   //  Console.WriteLine("Element: " + numbers[i]);
+
+   //  val += numbers[i];
    // }
+   // Console.WriteLine("Value: " + val);
 
-   // bool isAlive = true;
-   // while(isAlive) {
-   //  string end = Console.ReadLine();
-   //  if(end == "end") 
-   //        isAlive = false;
-   // }
+   char[,] symbols = new char[2, 2];
+   symbols[0, 0] = 'k';
 
 
-   // byte i = 100;
 
-   //  do {
-   //     Console.WriteLine("Element: " + i);
-   //  } while (i < 10);
+   int[,] nums = {
+    {5, 6, 7},
+    {1, 3, 2},
+    {3, 3, 3}
+};
 
+   nums[1, 2] = 5;
 
-   for (short i = 0; i < 100; i++) {
-    // if(i > 5) break;
-    if(i % 2 == 0) continue;
-    Console.WriteLine("Element: " + i);
+   for (int i = 0; i < nums.GetLength(0); i++) // Loop through rows
+   {
+    for (int j = 0; j < nums.GetLength(1); j++) // Loop through columns
+    {
+     Console.WriteLine(nums[i, j]);
+    }
    }
+
+
 
   }
  }
-
 }
