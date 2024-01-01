@@ -7,65 +7,18 @@ namespace mycs_project
 	{
 		static void Main()
 		{
-			// string word = "david";
-			// bool isAlive = true;
+			short user_input = Convert.ToInt16(Console.ReadLine());
 
-			// if (isAlive) {
-			// 	Console.WriteLine("good");
-			// }
-
-			// if (word.Length == 5) {
-			// 	Console.WriteLine("ok");
-			// }
-
-			// int x = 10;
-			// bool isHappy = false;
-
-			// if (x == 10 && isHappy)
-			// {
-			// 	Console.WriteLine("Number is 10 and user is happy!");
-			// }
-			// 		if (x == 10 || isHappy)
-			// 	{
-			// 		Console.WriteLine("Number is 10 and user is happy!");
-			// 	}
-			// 	else if (x > 100)
-			// 	{
-			// 		Console.WriteLine("X is not bigger than 10");
-			// 	}
-			// 	else
-			// 	{
-			// 		Console.WriteLine("Something went wrong");
-			// 	}
-
-
-			Console.Write("Enter name: ");
-			string role = Console.ReadLine();
-
-			if (role == "admin")
+			switch (user_input)
 			{
-				Console.Write("Enter name: ");
-				string user_name = Console.ReadLine();
-				Console.Write("Enter {0} age", user_name);
-				short age = Convert.ToInt16(Console.ReadLine());
-
-				if (age <= 0 || age > 99)
-				{
-					Console.Write("Enter {0} age", user_name);
-					age = Convert.ToInt16(Console.ReadLine);
-				}
-
-				if (age <= 0 || age > 99)
-					Console.WriteLine("Error");
-				else
-				{
-					Console.WriteLine("User age is" + age);
-				}
-
+				case 1: System.Console.WriteLine("Number is 1"); break;
+				case 2: System.Console.WriteLine("Number is 2"); break;
+				case 3: System.Console.WriteLine("Number is 3"); break;
+				case 4: System.Console.WriteLine("Number is 4"); break;
+				default:
+					Console.WriteLine("Number not found!");
+					break;
 			}
-			else
-				Console.WriteLine("You are not admin");
-
 		}
 	}
 
