@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace mycs_project
 {
@@ -8,56 +7,23 @@ namespace mycs_project
  {
   static void Main()
   {
-   // Print("Hello World!");
-   // Calculator(4,7,9);
-   // PrintName();
-   byte[] nums = { 3, 4, 5, 7, 9 };
-   byte resultat = Calc(nums);
-   // Console.WriteLine("Resultat: {0}", resultat);
-   long factorial = Factorial(55);
-   Console.WriteLine(factorial);
+    string word = "hello";
+    Console.WriteLine(word.Substring(0, word.Length - 1));
+    // Console.WriteLine(word.Trim());
+    // word = string.Concat(word, "!!");
+    // Console.WriteLine(String.Compare(word, "hello"));
+
+   // string people = "Alex,Bob,Jhon";
+   // string[] names = people.Split(new char[]{','});
+
+   // people = String.Join("-", names);
+   // Console.WriteLine(people);
+
+   // foreach (string item in names)
+   // {
+   //  Console.WriteLine(item);
+   // }
+
   }
-
-  public static long Factorial(long n)
-  {
-   if (n == 0 || n == 1)
-   {
-    return 1;
-   }
-   long res = 1;
-   for (long i = 2; i <= n; i++)
-   {
-    res *= i;
-   }
-   return res;
-  }
-
-  public static byte Calc(byte[] digits)
-  {
-   byte val = 0;
-   foreach (byte item in digits)
-   {
-    val += item;
-   }
-   return val;
-  }
-
-  // public static void Print (string str) {
-  //  Console.WriteLine(str);
-  // }
-
-  // public static void Calculator (int x, int y, int z) {
-  //     int res = (x+y) * z;
-  //     Print("Value: " + res);
-  // }
-
-  // public static string PrintName () {
-  //  string names = Console.ReadLine();
-  //  return names;
-  // }
-
-
-
-
  }
 }
