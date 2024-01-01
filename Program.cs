@@ -8,44 +8,56 @@ namespace mycs_project
  {
   static void Main()
   {
-
-   // short[] nums = {1,2,4,5,6,7};
-
-   // foreach(short item in nums) {
-   //  Console.WriteLine("Item: " + item);
-   // }
-
-   // short[,] numbers = {
-   //  {2,3,4},
-   //  {24,22,43},
-   //  {6,77,34},
-   // };
-
-   // foreach(short item in numbers) {
-   //  Console.WriteLine("Item: " + item);
-   // }
-
-   List<int> nums = new List<int> () {
-    5,6,8
-   };
-
-   nums.Add(222);
-   nums.Add(123);
-
-   nums.Remove(222);
-   nums.Sort();
-   nums.Reverse();
-   // nums.Clear();
-   bool containsEight = nums.Exists(item => item == 8);
-   Console.WriteLine(containsEight);
-   
-
-   foreach(int item in nums) {
-    Console.WriteLine(item);
-   }
-
-
-
+   // Print("Hello World!");
+   // Calculator(4,7,9);
+   // PrintName();
+   byte[] nums = { 3, 4, 5, 7, 9 };
+   byte resultat = Calc(nums);
+   // Console.WriteLine("Resultat: {0}", resultat);
+   long factorial = Factorial(55);
+   Console.WriteLine(factorial);
   }
+
+  public static long Factorial(long n)
+  {
+   if (n == 0 || n == 1)
+   {
+    return 1;
+   }
+   long res = 1;
+   for (long i = 2; i <= n; i++)
+   {
+    res *= i;
+   }
+   return res;
+  }
+
+  public static byte Calc(byte[] digits)
+  {
+   byte val = 0;
+   foreach (byte item in digits)
+   {
+    val += item;
+   }
+   return val;
+  }
+
+  // public static void Print (string str) {
+  //  Console.WriteLine(str);
+  // }
+
+  // public static void Calculator (int x, int y, int z) {
+  //     int res = (x+y) * z;
+  //     Print("Value: " + res);
+  // }
+
+  // public static string PrintName () {
+  //  string names = Console.ReadLine();
+  //  return names;
+  // }
+
+
+
+
  }
 }
