@@ -9,36 +9,24 @@ namespace mycs_project
         static void Main()
         {
 
-            // try
-            // {
-            //     int num = Convert.ToInt32(Console.ReadLine());
-            //     Console.WriteLine(num);
-            // }
-            // catch (FormatException)
-            // {
-            //     Console.WriteLine("Something went wrong!");
-            // }
+            Robot bot = new Robot();
 
-            try
-            {
-                int a = 5, b = 0, res;
-                Console.WriteLine("Type number");
-                a = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Type second number");
-                b = Convert.ToInt32(Console.ReadLine());
-                res = a / b;
-                Console.WriteLine("Res: " + res);
-            }
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("Something went wrong!");
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Something went wrong!");
-            } finally {
-                Console.WriteLine("Finaaaly!");
-            }
+            bot.setValues("Bot", 96, new byte[] { 3, 5, 7 });
+            bot.printValues();
+
+            // bot.name = "Bot";
+            // bot.weight = 96;
+            // bot.cordinates = new byte[] { 3, 5, 7 };
+
+            // Console.WriteLine(bot.name + bot.weight);
+
+            Robot robo = new Robot();
+            // robo.name = "robo";
+            // robo.weight = 74;
+            // robo.cordinates = new byte[] { 2, 77, 89 };
+            robo.setValues("Killer", 64, new byte[] { 3, 5, 7 });
+            robo.printValues();
+
 
         }
     }
