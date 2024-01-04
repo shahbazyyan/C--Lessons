@@ -8,6 +8,8 @@ namespace mycs_project {
        private int weight;
        private byte[] cordinates;
 
+       private int total;
+
        public void setValues (string _name, int _weight, byte[] _cordinates) {
         name = _name;
         weight = _weight;
