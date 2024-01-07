@@ -17,6 +17,11 @@ namespace mycs_project
    killer.printValues();
 
    Robot bot1 = new Robot("Botan");
+   bot1.Weight = -100;
+   Console.WriteLine(bot1.Weight);
+
+   bot1.Width = -100;
+   // Console.WriteLine(bot1.Width);
 
    // Robot.conut = 10;
    Robot.Print();

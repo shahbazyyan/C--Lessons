@@ -11,6 +11,23 @@ namespace mycs_project
   private int weight;
   private byte[] cordinates;
 
+  public int Weight {
+    get {
+     Console.Write("Result: ");
+     return this.weight;
+    } 
+    set {
+     if(value < 1)
+       this.weight = 1;
+     else if (value > 5000)
+       this.weight = 5000;  
+     else
+       this.weight = value;  
+    }
+  }
+
+  public int Width { private get; set; }
+
   public Robot(string _name, int _weight, byte[] _cordinates)
   {
    Console.WriteLine("Object has been created");
