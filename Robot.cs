@@ -7,12 +7,12 @@ namespace mycs_project
  {
 
   private static int conut;
-  private string name;
+  private string? name;
   private int weight;
-  private byte[] cordinates;
-  protected string rank;
+  private byte[]? cordinates;
+  protected string? rank;
 
-  public byte[] Cordinates
+  public byte[]? Cordinates
   {
    get
    {
@@ -20,7 +20,7 @@ namespace mycs_project
    }
    private set { }
   }
-  public string Name
+  public string? Name
   {
    get
    {

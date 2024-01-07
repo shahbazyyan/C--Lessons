@@ -15,10 +15,21 @@ namespace mycs_project
         public override void printValues()
         {
             Console.WriteLine(this.Name + " weight: " + this.Weight + ". Cordinates: ");
-            foreach(byte item in this.Cordinates) {
-                Console.WriteLine(item);
+
+            if (this.Cordinates != null)
+            {
+                foreach (byte item in this.Cordinates)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Cordinates are null.");
             }
         }
+
+
     }
 
 }
