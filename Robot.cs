@@ -12,6 +12,12 @@ namespace mycs_project
   private byte[] cordinates;
   protected string rank;
 
+  public string Name {
+   get {
+    return name;
+   } private set {}
+  }
+
   public int Weight {
     get {
      Console.Write("Result: ");
