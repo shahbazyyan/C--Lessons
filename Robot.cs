@@ -10,6 +10,7 @@ namespace mycs_project
   private string name;
   private int weight;
   private byte[] cordinates;
+  protected string rank;
 
   public int Weight {
     get {

@@ -12,9 +12,11 @@ namespace mycs_project
    Robot bot = new Robot("Bot", 96, new byte[] { 3, 5, 7 });
    bot.printValues();
 
-   Robot killer = new Robot();
-   killer.setValues("Killer", 980, new byte[] {4,6,9});
-   killer.printValues();
+   Killer killer = new Killer("Killer", 980, new byte[] {4,6,9}, 100);
+   // killer.setValues("Killer", 980, new byte[] {4,6,9});
+   // killer.printValues();
+   // killer.Health = 100;
+   killer.Lazer();
 
    Robot bot1 = new Robot("Botan");
    bot1.Weight = -100;
