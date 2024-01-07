@@ -3,7 +3,7 @@ using System;
 namespace mycs_project
 {
 
- class Robot
+ abstract class Robot
  {
 
   private static int conut;
@@ -12,25 +12,38 @@ namespace mycs_project
   private byte[] cordinates;
   protected string rank;
 
-  public string Name {
-   get {
+  public byte[] Cordinates
+  {
+   get
+   {
+    return cordinates;
+   }
+   private set { }
+  }
+  public string Name
+  {
+   get
+   {
     return name;
-   } private set {}
+   }
+   private set { }
   }
 
-  public int Weight {
-    get {
-     Console.Write("Result: ");
-     return this.weight;
-    } 
-    set {
-     if(value < 1)
-       this.weight = 1;
-     else if (value > 5000)
-       this.weight = 5000;  
-     else
-       this.weight = value;  
-    }
+  public int Weight
+  {
+   get
+   {
+    return this.weight;
+   }
+   set
+   {
+    if (value < 1)
+     this.weight = 1;
+    else if (value > 5000)
+     this.weight = 5000;
+    else
+     this.weight = value;
+   }
   }
 
   public int Width { private get; set; }
@@ -62,14 +75,7 @@ namespace mycs_project
    this.cordinates = cordinates;
   }
 
-  public virtual void printValues()
-  {
-   Console.WriteLine(name + " Weight: " + weight);
-   foreach (byte item in cordinates)
-   {
-    Console.WriteLine(item);
-   }
-  }
+  public abstract void printValues();
 
   public static void Print()
   {
