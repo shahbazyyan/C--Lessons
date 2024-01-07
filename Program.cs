@@ -4,30 +4,23 @@ using System.IO;
 namespace mycs_project
 {
 
-    class Program
-    {
-        static void Main()
-        {
+ class Program
+ {
+  static void Main()
+  {
 
-            Robot bot = new Robot();
+   Robot bot = new Robot("Bot", 96, new byte[] { 3, 5, 7 });
+   bot.printValues();
 
-            bot.setValues("Bot", 96, new byte[] { 3, 5, 7 });
-            bot.printValues();
+   Robot killer = new Robot();
+   killer.setValues("Killer", 980, new byte[] {4,6,9});
+   killer.printValues();
 
-            // bot.name = "Bot";
-            // bot.weight = 96;
-            // bot.cordinates = new byte[] { 3, 5, 7 };
+   Robot bot1 = new Robot("Botan");
 
-            // Console.WriteLine(bot.name + bot.weight);
-
-            Robot robo = new Robot();
-            // robo.name = "robo";
-            // robo.weight = 74;
-            // robo.cordinates = new byte[] { 2, 77, 89 };
-            robo.setValues("Killer", 64, new byte[] { 3, 5, 7 });
-            robo.printValues();
-
-
-        }
-    }
+   // Robot.conut = 10;
+   Robot.Print();
+  
+  }
+ }
 }
