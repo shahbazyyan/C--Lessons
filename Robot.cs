@@ -62,7 +62,7 @@ namespace mycs_project
    this.cordinates = cordinates;
   }
 
-  public void printValues()
+  public virtual void printValues()
   {
    Console.WriteLine(name + " Weight: " + weight);
    foreach (byte item in cordinates)

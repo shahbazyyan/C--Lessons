@@ -9,10 +9,15 @@ namespace mycs_project {
 
     public Killer (string name, int weight, byte[] cordinates, int health): base(name,weight,cordinates) {
         this.Health = health;
-        base.printValues();
     }
 
-    public void Lazer () {
+        public override void printValues()
+        {
+            base.printValues();
+            Console.WriteLine("Health: " + this.Health);
+        }
+
+        public void Lazer () {
         Console.WriteLine("Shooting with lazer");
         this.rank = "S1";
     }
