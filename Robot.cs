@@ -23,19 +23,19 @@ namespace mycs_project
    conut++;
   }
 
-  public Robot(string _name)
+  public Robot(string name)
   {
    Console.WriteLine("Object has been created");
-   name = _name;
+   this.name = name;
    conut++;
   }
 
 
-  public void setValues(string _name, int _weight, byte[] _cordinates)
+  public void setValues(string name, int weight, byte[] cordinates)
   {
-   name = _name;
-   weight = _weight;
-   cordinates = _cordinates;
+   this.name = name;
+   this.weight = weight;
+   this.cordinates = cordinates;
   }
 
   public void printValues()
