@@ -13,12 +13,13 @@ namespace mycs_project
    //    Bot bot = new Bot("Bot", 96, new byte[] { 3, 5, 7 });
    //    bot.printValues();
 
-   //    Killer killer = new Killer("Killer", 980, new byte[] { 4, 6, 9 }, 100);
-   //    killer.printValues();
-   //    killer.Lazer();
+      Killer killer = new Killer("Killer", 980, new byte[] { 4, 6, 9 }, 100, Type.Traitor);
+      killer.printValues();
+      killer.Lazer();
 
-      Bot bot1 = new Bot();
-      bot1.setValues("Mike");
+
+      // Bot bot1 = new Bot();
+      // bot1.setValues("Mike");
       
 
    // Multiply(7, 89);
